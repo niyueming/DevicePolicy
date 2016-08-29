@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016  Ni YueMing<niyueming@163.com>
+  ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+  ~
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.nym.devicepolicy.MainActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="获取超级用户权限"
+                android:id="@+id/getAdmin"
+                android:onClick="onClick"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="移除超级用户权限"
+                android:id="@+id/removeAdmin"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="锁屏"
+                android:id="@+id/lock"
+                android:onClick="onClick"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="重置密码（123）"
+                android:id="@+id/reset_password"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="清除数据（慎用,会清除sd卡数据）"
+                android:id="@+id/wipe_data"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="禁用所有摄像头"
+                android:id="@+id/disable_camera"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:text="解除禁用所有摄像头"
+                android:id="@+id/enable_camera"
+                android:onClick="onClick"
+                />
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="使该app拥有设备"-->
+                <!--android:id="@+id/set_device_owner"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="清除该app拥有设备"-->
+                <!--android:id="@+id/clear_device_owner_app"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="创建账户"-->
+                <!--android:id="@+id/create_user"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="使用profile"-->
+                <!--android:id="@+id/set_profile_owner"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="清除profile"-->
+                <!--android:id="@+id/clear_profile_owner"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="禁用截屏"-->
+                <!--android:id="@+id/disable_screen_capture"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/button_margin"-->
+                <!--android:text="解除禁用截屏"-->
+                <!--android:id="@+id/enable_screen_capture"-->
+                <!--android:onClick="onClick"-->
+                <!--/>-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
